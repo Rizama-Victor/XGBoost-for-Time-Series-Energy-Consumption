@@ -91,6 +91,8 @@ The evaluation metrics for the model on the test dataset is presented below:
 | **Worst Average Error for a Day** | 1002.318 |
 | **Best Average Error for a Day** | 136.817 |
 
+**Note:** The prediction results data can be obtained here.
+
 ---
 
 ## 💡Key Insights
