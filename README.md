@@ -74,3 +74,40 @@ As established earlier, the XGBoost machine learning algorithm was used to train
 | **reg_alpha** | 50.0 |
 | **reg_lambda** | 0.0 |
 | **tree_method** | hist |
+
+---
+
+## 🧮 Results
+
+The evaluation metrics for the model on the test dataset is presented below:
+
+| **Evaluation Metric** | **Value** |
+|---------------------|-----------------------------|
+| **Mean Squared Error (MSE)** | 377558.839  |
+| **Root Mean Squared Error (RMSE)** | 614.458 |
+| **Coefficient of Determination (R2_score)** | 0.941  |
+| **Mean Absolute Error (MAE)** | 481.880 |
+| **Mean Absolute Percentage Error (MAPE)** | 3.196  |
+| **Worst Average Error for a Day** | 1002.318 |
+| **Best Average Error for a Day ** | 136.817 |
+
+---
+
+## 💡Key Insights
+
+- The model was trained on a large dataset of 119,353 observations across 8 features, meaning that higher error values such as the MSE (377,558.839) and RMSE (614.458) were expected, since periods with strong fluctuations or outliers contributed significantly to the overall error.
+
+- The MAE of 481.880 showed that the model maintained a reasonably stable error across most predictions despite the dataset size. In relative terms, the low MAPE of 3.196% indicated that the model generalized well to unseen patterns in energy usage.
+
+- The high R² score of 0.941 demonstrated that the model successfully learned the underlying structure of the time-series data, capturing most of the variation and enabling accurate forecasts.
+
+- The comparison between the model’s best and worst single-day errors highlighted how prediction accuracy varied depending on the volatility of specific days, reflecting the natural variability in real-world energy consumption.
+
+- Overall, the XGBoost model delivered strong performance. While MSE and RMSE appeared moderately high due to the dataset’s scale and variability, metrics like MAPE and R² confirmed that the model captured general energy consumption trends effectively.
+
+---
+
+### ⚠️ Disclaimer
+While the XGBoost model demonstrated strong performance, its accuracy was still affected by the high variability and occasional outliers present in the dataset, leading to moderately high error values such as MSE and RMSE. The model also relied heavily on historical patterns, which may limit its ability to capture sudden shifts in energy consumption caused by external factors such as policy changes, unusual weather conditions, or unforeseen events. Future improvements could involve incorporating additional explanatory variables (e.g., temperature, humidity, calendar effects, or occupancy patterns), exploring advanced time-series techniques such as XGBoost with lag-based features or hybrid deep learning models, and applying more robust outlier-handling or smoothing strategies.
+
+---
