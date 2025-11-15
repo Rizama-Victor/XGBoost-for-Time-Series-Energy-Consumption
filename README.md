@@ -107,7 +107,14 @@ The evaluation metrics for the model on the test dataset is presented below:
 
 ---
 
-### ⚠️ Disclaimer
+## ⚠️ Disclaimer
+
 While the XGBoost model demonstrated strong performance, its accuracy was still affected by the high variability and occasional outliers present in the dataset, leading to moderately high error values such as MSE and RMSE. The model also relied heavily on historical patterns, which may limit its ability to capture sudden shifts in energy consumption caused by external factors such as policy changes, unusual weather conditions, or unforeseen events. Future improvements could involve incorporating additional explanatory variables (e.g., temperature, humidity, calendar effects, or occupancy patterns), exploring advanced time-series techniques such as XGBoost with lag-based features or hybrid deep learning models, and applying more robust outlier-handling or smoothing strategies.
+
+---
+
+## 📌 Note
+
+Please kindly note that this README file is a summarized version of the full implementation of this project. The complete implementation can be accessed via the [program script](XGBoost_for_Time_Series_Energy_Consumption.ipynb). Model Weights can be provided upon request.
 
 ---
