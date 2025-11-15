@@ -89,7 +89,7 @@ The evaluation metrics for the model on the test dataset is presented below:
 | **Mean Absolute Error (MAE)** | 481.880 |
 | **Mean Absolute Percentage Error (MAPE)** | 3.196  |
 | **Worst Average Error for a Day** | 1002.318 |
-| **Best Average Error for a Day ** | 136.817 |
+| **Best Average Error for a Day** | 136.817 |
 
 ---
 
