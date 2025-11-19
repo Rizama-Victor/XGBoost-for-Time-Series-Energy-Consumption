@@ -59,7 +59,7 @@ To support more efficient resource allocation, this project developed a machine 
 The training set included all energy consumption values up to and including December 31, 2017, while the testing set encompassed observations from January 1, 2018, to the most recent recorded data. 
 
 ### Model Training
-As established earlier, the XGBoost machine learning algorithm was used to train the model on the training set. Hyperparameters were also set to improve predictive performance on time-series data. Below is a summary of the hyperparameters
+As established earlier, the XGBoost machine learning algorithm was used to train the model on the training set. Hyperparameters were also set to improve predictive performance on time-series data. Below is a summary of the hyperparameters.
 
 | **Hyperparameters** | **Value** |
 |---------------------|-----------------------------|
